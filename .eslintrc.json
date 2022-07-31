@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true,
         "jest": true,
-        "node": true
+        "node": true,
     },
     "settings": {
       "react": {
@@ -14,12 +14,14 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:storybook/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "js": true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"

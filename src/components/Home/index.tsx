@@ -1,3 +1,4 @@
+import { Button } from "../Button";
 import { Title } from "./Title";
 
 export const Home = () => (
@@ -6,6 +7,6 @@ export const Home = () => (
       Titulo2
     </Title>
 
-    <h3 className="heading4">heading(h2)</h3>
+    <Button label="Home Button" outroTeste="Outro teste" />
   </div>
 );
