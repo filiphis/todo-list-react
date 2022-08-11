@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     input,
     textarea,
     button {
-      font-family: ${theme.font.family.roboto};
+      font-family: ${theme.font.family.inter};
       font-size: ${theme.font.sizes.medium};
       font-weight: ${theme.font.normal};
       font-display: swap;

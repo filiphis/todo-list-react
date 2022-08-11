@@ -6,7 +6,7 @@ export default {
     white: '#fff',
     black: '#000',
 
-    'gray-100': '#E1E1E6',
+    'gray-100': '#f2f2f2',
     'gray-300': '#C4C4CC',
     'gray-400': '#8D8D99',
     'gray-500': '#7C7C84',
@@ -22,14 +22,14 @@ export default {
     'red-500': '#AB222E',
     'red-700': '#7A1921',
 
-    'yellow-500': '#FBA94C'
+    'yellow-500': '#FBA94C',
+    'blue-dark': '#1E6F9F'
   },
 
   font: {
     family: {
-      roboto:
-        "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-      'roboto-mono': "'Roboto Mono', monospace"
+      inter:
+        "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
     },
     normal: 400,
     bold: 700,
