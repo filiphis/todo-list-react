@@ -7,11 +7,11 @@ export default {
     black: '#000',
 
     'gray-100': '#f2f2f2',
-    'gray-300': '#C4C4CC',
+    'gray-300': '#BDBDBD',
     'gray-400': '#8D8D99',
-    'gray-500': '#7C7C84',
+    'gray-500': '#262626',
     'gray-600': '#323238',
-    'gray-700': '#29292E',
+    'gray-700': '#0D0D0D',
     'gray-800': '#202024',
     'gray-900': '#121214',
 
@@ -46,6 +46,7 @@ export default {
   },
 
   spacings: {
+    small: '1.6rem',
     medium: '5.6rem'
   },
 

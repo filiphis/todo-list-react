@@ -5,7 +5,7 @@ export const Wrapper = styled.button`
     background-color: ${theme.colors['blue-dark']};
     color: ${theme.colors['gray-100']};
     padding: 1.6rem;
-    width: 9rem;
+    min-width: 9rem;
     height: 5.2rem;
     border-radius: ${theme.border.radius};
     display: flex;
