@@ -7,8 +7,8 @@ export default {
     black: '#000',
 
     'gray-100': '#f2f2f2',
-    'gray-300': '#BDBDBD',
-    'gray-400': '#8D8D99',
+    'gray-300': '#808080',
+    'gray-400': '#333333',
     'gray-500': '#262626',
     'gray-600': '#323238',
     'gray-700': '#0D0D0D',
@@ -23,7 +23,9 @@ export default {
     'red-700': '#7A1921',
 
     'yellow-500': '#FBA94C',
-    'blue-dark': '#1E6F9F'
+    'blue-dark': '#1E6F9F',
+    blue: '#4EA8DE',
+    'purple-dark': '#5E60CE'
   },
 
   font: {
