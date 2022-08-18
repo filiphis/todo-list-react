@@ -1,5 +1,5 @@
 export type TaskProps = {
-  id: number
+  key: number
   state?: 'padrao' | 'concluida'
   text: string
 }

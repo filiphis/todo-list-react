@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     padding: 1.6rem;
     border-radius: ${theme.border.radius};
     background-color: ${theme.colors['gray-500']};
-    border: 1px solid ${theme.colors['gray-400']};
+    /* border: 1px solid ${theme.colors['gray-400']}; */
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 
     span {
@@ -57,7 +57,7 @@ export const Wrapper = styled.div`
     .checkbox input[type='checkbox']:checked + span {
       box-shadow: none;
       background-color: ${theme.colors['purple-dark']};
-      background-image: url('/public/check.svg');
+      background-image: url('/check.svg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center 65%;
@@ -72,6 +72,18 @@ export const Wrapper = styled.div`
     .TASK_CONCLUIDA {
       text-decoration: line-through;
       color: ${theme.colors['gray-300']};
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
     }
   `}
 `

@@ -3,9 +3,9 @@ import * as S from './styles'
 
 import { TaskProps } from './@types'
 
-export function Task({ id, text, state = 'padrao' }: TaskProps) {
+export function Task({ text, state = 'padrao', key }: TaskProps) {
   return (
-    <S.Wrapper key={id}>
+    <S.Wrapper>
       <label htmlFor="checked" className="checkbox">
         <input
           type="checkbox"
@@ -23,6 +23,7 @@ export function Task({ id, text, state = 'padrao' }: TaskProps) {
       </span>
       <a href="">
         <Trash size={18} />
+        <span className="sr-only">Excluir tarefa {key}</span>
       </a>
     </S.Wrapper>
   )
