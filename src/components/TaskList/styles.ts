@@ -53,6 +53,7 @@ export const Wrapper = styled.div`
         margin-top: 2.4rem;
         border-top: 1px solid ${theme.colors['gray-400']};
         border-radius: ${theme.border.radius};
+        text-align: center;
 
         svg {
           margin-bottom: 1.6rem;

@@ -10,7 +10,6 @@ export function Task({ text, state = 'padrao', key }: TaskProps) {
         <input
           type="checkbox"
           name="input-checkbox"
-          id="checked"
           checked={state === 'concluida'}
         />
         <span></span>
