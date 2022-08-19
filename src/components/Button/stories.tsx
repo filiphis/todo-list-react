@@ -7,10 +7,10 @@ export default {
   component: Button
 } as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+const Template: ComponentStory<typeof Button> = () => <Button />
 
 export const Padrao = Template.bind({})
 
-Padrao.args = {
-  children: 'Criar'
-}
+// Padrao.args = {
+//   children: 'Criar'
+// }

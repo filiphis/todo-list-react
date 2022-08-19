@@ -9,8 +9,9 @@ export const Wrapper = styled.button`
     height: 5.2rem;
     border-radius: ${theme.border.radius};
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    gap: 0.8rem;
     border: none;
     transition: filter 300ms ease, transform 150ms ease;
     transform: translateY(0);
@@ -23,6 +24,16 @@ export const Wrapper = styled.button`
       filter: opacity(0.8);
       transform: translateY(-0.8px);
       transition: filter 300ms ease, transform 150ms ease;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      box-shadow: 0 0 0 1px ${theme.colors['gray-100']};
+      border-radius: 50%;
     }
   `}
 `

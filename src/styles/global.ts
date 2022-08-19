@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 
   ${({ theme }) => css`
     body {
-      background-color: ${theme.colors['gray-900']};
+      background-color: ${theme.colors['gray-600']};
       color: ${theme.colors['gray-100']};
     }
     body,

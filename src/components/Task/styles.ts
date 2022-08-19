@@ -86,4 +86,10 @@ export const Wrapper = styled.div`
       border-width: 0;
     }
   `}
+
+  transition: transform 100ms linear, opacity 100ms linear;
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.6;
+  }
 `
