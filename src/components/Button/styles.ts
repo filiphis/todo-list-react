@@ -28,12 +28,9 @@ export const Wrapper = styled.button`
 
     div {
       display: flex;
-      justify-content: center;
+      gap: 0.8rem;
+      justify-content: space-around;
       align-items: center;
-      width: 1.6rem;
-      height: 1.6rem;
-      box-shadow: 0 0 0 1px ${theme.colors['gray-100']};
-      border-radius: 50%;
     }
   `}
 `

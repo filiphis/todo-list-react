@@ -1,4 +1,4 @@
-import { Plus } from 'phosphor-react'
+import { PlusCircle } from 'phosphor-react'
 import { ReactElement } from 'react'
 import * as S from './styles'
 
@@ -10,9 +10,9 @@ export function Button() {
   return (
     <S.Wrapper>
       <>
-        Criar
         <div>
-          <Plus size={12} />
+          Criar
+          <PlusCircle size={20} />
         </div>
       </>
     </S.Wrapper>

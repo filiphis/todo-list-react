@@ -89,7 +89,7 @@ export const Wrapper = styled.div`
 
   transition: transform 100ms linear, opacity 100ms linear;
   &:hover {
-    transform: translateY(-2px);
     opacity: 0.6;
+    cursor: pointer;
   }
 `

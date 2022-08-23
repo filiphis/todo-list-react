@@ -10,7 +10,7 @@ export function TaskList({ tasks }: TaskListProps) {
       <header>
         <div>
           <span className="criadas">Tarefas criadas</span>
-          <span className="contador">0</span>
+          <span className="contador">{tasks.length}</span>
         </div>
         <div>
           <span className="concluidas">Concluídas</span>
