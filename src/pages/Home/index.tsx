@@ -5,7 +5,6 @@ import { TaskList } from '../../components/TaskList'
 import { TaskProps } from '../../components/Task/@types'
 import { ChangeEvent, FormEvent, useState } from 'react'
 import * as S from './styles'
-import { TaskListProps } from '../../components/TaskList/@types'
 
 export function Home() {
   const [tasks, setTasks] = useState<TaskProps[]>([])

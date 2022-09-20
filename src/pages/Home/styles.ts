@@ -16,6 +16,8 @@ export const Content = styled.main`
   max-width: 73.6rem;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-bottom: 6.4rem;
+
   .formContainer {
     background-color: transparent;
     display: flex;
