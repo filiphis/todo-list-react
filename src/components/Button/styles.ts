@@ -19,7 +19,7 @@ export const Wrapper = styled.button`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.bold};
 
-    &:hover {
+    &:hover:not(:disabled) {
       cursor: pointer;
       filter: opacity(0.8);
       transform: translateY(-0.8px);
@@ -31,6 +31,11 @@ export const Wrapper = styled.button`
       gap: 0.8rem;
       justify-content: space-around;
       align-items: center;
+    }
+
+    &:disabled {
+      filter: opacity(0.7);
+      cursor: not-allowed;
     }
   `}
 `

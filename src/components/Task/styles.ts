@@ -1,7 +1,7 @@
 import { Check } from 'phosphor-react'
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.li`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row;
@@ -22,9 +22,12 @@ export const Wrapper = styled.div`
       flex-grow: 1;
     }
 
-    a {
+    button {
       color: ${theme.colors['gray-300']};
+      background-color: transparent;
+      border: none;
       line-height: 0;
+      cursor: pointer;
     }
 
     /* Label */
@@ -90,6 +93,5 @@ export const Wrapper = styled.div`
   transition: transform 100ms linear, opacity 100ms linear;
   &:hover {
     opacity: 0.6;
-    cursor: pointer;
   }
 `

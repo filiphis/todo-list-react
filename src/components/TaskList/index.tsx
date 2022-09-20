@@ -2,9 +2,21 @@ import { ClipboardText } from 'phosphor-react'
 import { Task } from '../Task'
 import { TaskListProps } from './@types'
 import * as S from './styles'
-export function TaskList({ tasks }: TaskListProps) {
-  // const [tasks, setTasks] = useState([])
+export function TaskList({
+  tasks,
+  OnDeleteTask,
+  onUpdateTaskState
+}: TaskListProps) {
   const tasksLength = tasks.length
+  const completedTasksLength = tasks.filter((task) => task.isCompleted)
+  function deleteTask(id: number) {
+    OnDeleteTask(id)
+  }
+
+  function updateTaskState(id: number) {
+    onUpdateTaskState(id)
+  }
+
   return (
     <S.Wrapper>
       <header>
@@ -14,7 +26,7 @@ export function TaskList({ tasks }: TaskListProps) {
         </div>
         <div>
           <span className="concluidas">Concluídas</span>
-          <span className="contador">0</span>
+          <span className="contador">{completedTasksLength.length}</span>
         </div>
       </header>
       <div className="content">
@@ -26,9 +38,31 @@ export function TaskList({ tasks }: TaskListProps) {
           </div>
         ) : (
           <div className="com-tarefas">
-            {tasks.map((task) => (
-              <Task key={task.key} text={task.text} state={task.state} />
-            ))}
+            {tasks
+              .filter((task) => !task.isCompleted)
+              .map((task) => (
+                <Task
+                  key={task.taskId}
+                  taskId={task.taskId}
+                  text={task.text}
+                  isCompleted={task.isCompleted}
+                  deleteTask={deleteTask}
+                  updateTaskState={updateTaskState}
+                />
+              ))}
+
+            {tasks
+              .filter((task) => task.isCompleted)
+              .map((task) => (
+                <Task
+                  key={task.taskId}
+                  taskId={task.taskId}
+                  text={task.text}
+                  isCompleted={task.isCompleted}
+                  deleteTask={deleteTask}
+                  updateTaskState={updateTaskState}
+                />
+              ))}
           </div>
         )}
       </div>

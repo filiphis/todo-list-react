@@ -31,12 +31,16 @@ export const Wrapper = styled.div`
       }
 
       .contador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: ${theme.font.bold};
         font-size: ${theme.font.sizes.xsmall};
         color: ${theme.colors['gray-200']};
         background-color: ${theme.colors['gray-400']};
         padding: 2px 8px;
         border-radius: 50%;
+        width: 2.3rem;
       }
     }
 

@@ -1,14 +1,10 @@
 import { PlusCircle } from 'phosphor-react'
-import { ReactElement } from 'react'
+import { ButtonProps } from './@types'
 import * as S from './styles'
 
-type ButtonProps = {
-  children: ReactElement
-}
-
-export function Button() {
+export function Button({ ...props }: ButtonProps) {
   return (
-    <S.Wrapper>
+    <S.Wrapper {...props}>
       <>
         <div>
           Criar
